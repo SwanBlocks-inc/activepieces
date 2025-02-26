@@ -1,0 +1,25 @@
+{
+  "name": "piece-bunq",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/pieces/community/bunq/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/pieces/community/bunq",
+        "tsConfig": "packages/pieces/community/bunq/tsconfig.json",
+        "main": "packages/pieces/community/bunq/src/index.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/pieces/community/bunq/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}
