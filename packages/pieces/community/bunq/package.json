@@ -1,0 +1,13 @@
+{
+  "name": "@activepieces/piece-bunq",
+  "version": "0.1.0",
+  "dependencies": {
+    "@activepieces/pieces-framework": "latest",
+    "@activepieces/pieces-common": "latest",
+    "crypto": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "src/index.ts"
+}
